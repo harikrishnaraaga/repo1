@@ -1,205 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Welcome hari</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>
+neetu webpage
+</title>
 <style>
-* {
-  box-sizing: border-box;
+body{
+background-color:#c1bb97;
+font-family:"Times New Roman";
+padding:5px;
 }
+.header{
+background-color:blue;
+padding:30px;
+}
+.navtop{
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
-.header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-.topnav {
-  width: 100%;
-  height: 30px;
-  background: #ccc;
-}
-.leftcolumn {
-  float:left;
-  height:auto;
-  background-color:#666;
-  width:80%; 
-}
-.rightcolumn {
-  float: left;
-  width: 20%;
-  color:black;
-  background-color: #f1f1f1;
-}
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-}
-a{text-decoration:none;
-color:black;
-}
-.grid-container {
-  display: grid;
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
-  grid-template-columns: auto auto;
-  padding: 5px;
-}
+.division{
+background-color:black;
+padding:50px;
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-  margin:25px 15px 15px 15px;
 }
-.bot-container{
-display: grid;
-  grid-row-gap:5px;
-  grid-column-gap:1px;
-  grid-template-columns: auto auto;
-  padding: 5px;
+.row:after{
+content: "";
+display:table;
+clear:both;
 }
-.bot-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 15px;
-  margin:25px 15px 15px 5px;
+.leftcolumn{
+background-color:orange;
+float:left;
+width:80%;
+height:400px;
+}
+.rightcolumn{
+background-color:lightgreen;
+float:left;
+height:400px;
+width:20%;
+}
+.card{
+margin-top:20px;
+}
+.footer{
+background-color:powderblue;
+padding:20px;
 }
 </style>
-</head>
 <body>
-
 <div class="header">
-
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="img1.jpg" height=200px width=1000px>
-  <img class="mySlides" src="img2.jpg" height=200px width=1000px>
-  <img class="mySlides" src="img3.jpg" height=200px width=1000px>
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-  </div>
+<img src=""
+<div class="navtop">
+<p><nav></p>
+<a href="home.html">HOME</a>
+<a href="blog.html">BLOG</a>
+<a href="resume.html">RESUME</a>
+<a href="contact.html">CONTACT</a>
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
 </div>
-<div class="topnav">
-    <a href="link1" title="Home" target=""><b>&nbsp&nbspHome</b></a>
-<a href="login.html" title="Login/signup" target="divheader"><b>&nbsp&nbspLogin/signup</b></a>
-<a href="link1" title="Groups"><b>&nbsp&nbspGroups</b></a>
-<a href="link1" title="Book"><b>&nbsp&nbspBook</b></a>
-<a href="link1" title="Trips"><b>&nbsp&nbspTrips</b></a>
-<a href="link1" title="About"><b>&nbsp&nbspAbout</b></a>
+<div class="division">
+<p>div</p>
 </div>
 <div class="row">
 <div class="leftcolumn">
-<div class="card">
-<h2><b>Content</b></h2>
-<p>CSS Corp is a new age IT Services and Technical Support Services company that harnesses the power of digital to address customer needs. The company collaborates with leading businesses and enterprises to reimagine customer engagement models, help streamline business operations, and identify new revenue opportunities. Its team of 5,500 technology professionals across 16 global locations are passionate about helping customers differentiate and succeed.</p>
+this is left column
 </div>
-<div class="card">
-<div class="grid-container">
-  <div class="grid-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-  <div class="grid-item">There are many variations ofPassages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</div>
-  <div class="grid-item">It is a long established fact that a reader will be distracted by the 
-readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>  
-  <div class="grid-item">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</div>
+<div class="rightcolumn">
+this is right column
 </div>
-</div>
-</div>
-  <div class="rightcolumn">
-    <h1>CSS Corp</h1>
-<div class="bot-container">
-<div class="bot-item">
-<img src="1 (1).jpeg" height=130 width=100></div>
-<div class="bot-item">
-<img src="2 (1).jpg" height=130 width=100></div>
-<div class="bot-item">
-<img src="2 (2).jpg" hight=130 width=100></div>
-<div class="bot-item">
-<img src="2 (3).jpg" height=130 width=100></div>
-<div class="bot-item">
-<img src="2 (4).jpg" height=130 width=100></div>
-<div class="bot-item">
-<img src="3 (1).jpg" height=130 width=100></div>
-<div class="bot-item">
-<img src="3 (2).jpg" height=130 width=100></div>
-<div class="bot-item">
-<img src="3 (3).jpeg" height=130 width=100></div>
-</div>
-  </div>
 </div>
 <div class="footer">
-  <p>Footer</p>
+<p>footer</p>
 </div>
-
 </body>
 </html>
-  
